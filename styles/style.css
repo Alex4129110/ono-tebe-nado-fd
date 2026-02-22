@@ -1,1 +1,296 @@
-/* место для вашего кода */
+/* ===== ОБЩИЕ СТИЛИ ===== */
+
+.header {
+display: grid;
+justify-content: space-between;
+grid-template-columns: 1fr 148px 1fr;
+align-items:center;
+height: 193px;
+margin: 50px;
+}
+.header-menu {
+font-family: Raleway;
+font-weight: 400;
+font-size: 18px;
+justify-self:start;
+justify-content: space-between;
+text-underline-offset: 4px;
+}
+.header-menu-list {
+display: flex;
+gap: 33px;
+flex-direction: row;
+list-style:circle;
+}
+.menu-item {
+text-decoration: underline;
+}
+.menu-item-active {
+text-decoration:none;
+list-style: none;
+}
+.logo {
+display: block; 
+justify-self: center;
+align-items: start;
+}
+.logo-img {
+display: block;
+justify-self: start;
+max-height:105px ;
+}
+.address {
+display: flex;
+flex-direction: column;
+line-height: 24.3px;
+font-family: Raleway;
+font-weight: 400;
+font-style: normal;
+font-size: 18px;
+text-decoration: none;
+}
+.address a {
+text-decoration: underline;
+text-underline-offset: 4px;
+}
+.header-address {
+padding-left: 185px;
+}
+.cover {
+position:relative;
+display: flex;
+flex-direction: column;
+background-image: url(../images/cover.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+background-position: center;
+padding:155px 50px 50px;
+}
+.overlay {
+width: 100%;
+height: 100%;
+z-index: 1;
+inset: 0;
+position: absolute;
+background-color: rgb(0,0,0,0.6);
+}
+.cover-title {
+z-index: 2;
+font-family: Raleway;
+font-weight: 700;
+color:#FFFFFF ;
+font-size: 100px;
+line-height: 1.36;
+letter-spacing: 30px;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+}
+.title-line {
+display: block;
+}
+.title-line-center {
+padding-left: 29px;
+text-align: center;
+}
+.title-line-right {
+text-align:right;
+padding-left: 614px;
+}
+.cover-desc {
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+margin-top:94px;
+}
+.cover-text {
+z-index: 2;
+font-family: Raleway;
+font-weight: 400;
+color: white;
+font-size: 22px;
+line-height: 28px;
+text-transform: uppercase;
+word-spacing:20px ;
+}
+.bet-btn {
+z-index: 2;
+min-width: 256px;
+min-height: 51px;
+top: 656px;
+left: 794px;
+opacity: 1;
+border-width: 1px;
+font-family: Raleway;
+font-weight: 500;
+font-size: 22px;
+paddin-spacing: 0%;
+text-align: center;
+text-transform: uppercase;
+align-items:self-end;
+background: transparent;
+border: 1px solid white;
+color:white;
+}
+
+/* ===== СЕКЦИЯ ЛОТЫ ===== */
+
+.lots {
+padding: 185px 24px 0;
+flex-direction: column;
+}
+.lots-title {
+font-family: Raleway;
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+text-transform: uppercase;
+padding-left: 40px;
+padding-bottom: 27px;
+}
+.lots-list {
+ 
+list-style: none;
+display: flex;
+gap:25px ;
+margin-bottom: 30px;
+}
+.lot {
+display: flex;
+position: relative;
+min-width: 334px;
+min-height: 596px;
+background-size: cover;
+background-repeat:no-repeat;
+background-position: center;
+justify-content:space-between;
+flex-direction: column;
+}
+.lot-film {
+background-image: url(../images/card-lot-01.jpg);
+}
+.lot-book {
+background-image: url(../images/card-lot-02.jpg);
+}
+.lot-picture {
+background-image: url(../images/card-lot-03.jpg);
+}
+.lot-name {
+z-index: 2;
+color: #FFFFFF;
+font-family: Raleway;
+font-weight: 700;
+font-size: 22px;
+line-height: 120%;
+paddin-spacing: 0%;
+text-transform: uppercase;
+text-decoration: underline;
+text-decoration-style: solid;
+margin:48px 40px auto;
+}
+.lot-desc {
+z-index: 2;
+color: #FFFFFF;
+font-family: Raleway;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+margin: auto 40px 48px;
+}
+.lots-more {
+padding-left: 40px;
+font-family: Raleway;
+font-weight: 400;
+font-size: 20px;
+text-decoration: underline;
+text-underline-offset: 4px;
+}
+
+/* ===== СЕКЦИЯ ОБ АУКЦИОНЕ ===== */
+
+.about {
+display: grid;
+max-width: 1052px;
+max-height: 595px;
+display: grid;
+grid-template-columns: 334px 1fr;
+gap:26px;
+margin: 120px 24px 180px;
+}
+.about-col {
+justify-content: center;
+}
+.about-logo {
+display: flex;
+background-color: black;
+border-radius:50%;
+width: 240px;
+height: 240px;
+align-items: center;
+justify-content: center;
+margin-top: 35px;
+margin-left: 47px;
+}
+.about-img {
+max-width: 145px;
+max-height: 115px;
+}
+.about-title {
+font-family: Raleway;
+font-weight: 700;
+font-size: 40px;
+line-height: 1;
+letter-spacing: 0%;
+text-transform: uppercase;
+padding-top:102px ;
+padding-bottom: 100px;
+margin-top: 40px;
+}
+.about-text {
+display: flex;
+flex-direction: column;
+font-family: Raleway;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.footer {
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+justify-content: center;
+}
+.footer-address{
+margin-left: 52px;
+}
+.footer-menu {
+justify-content: center;
+text-align: center;
+}
+.footer-list {
+font-family: Raleway;
+font-weight: 400;
+font-size: 18px;
+justify-self:center;
+justify-content: space-between;
+text-underline-offset: 4px;
+text-decoration: underline;
+list-style: none;
+}
+.social-list {
+display:flex;
+list-style: none;
+justify-content: space-around;
+/* gap: 48px; */
+/* flex-direction: row; */
+align-items: start;
+margin-left: 50px;
+margin-right: 26px;
+}
+.social-item {
+max-width: 48px;
+max-height: 48px;
+}
