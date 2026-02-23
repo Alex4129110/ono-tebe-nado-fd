@@ -1,2 +1,2 @@
 hello world!
-https://github.com/yandex-praktikum/ono-tebe-nado-fd
+https://github.com/Alex4129110/ono-tebe-nado-fd
