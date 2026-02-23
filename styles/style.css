@@ -213,7 +213,6 @@ text-underline-offset: 4px;
 display: grid;
 max-width: 1052px;
 max-height: 595px;
-display: grid;
 grid-template-columns: 334px 1fr;
 gap:26px;
 margin: 120px 24px 180px;
@@ -260,10 +259,11 @@ line-height: 24px;
 
 .footer {
 display: grid;
-grid-template-columns: repeat(3, 1fr); 
 justify-content: center;
+grid-template-columns: repeat(3, 1fr); 
+
 }
-.footer-address{
+.footer-address {
 margin-left: 52px;
 }
 .footer-menu {
