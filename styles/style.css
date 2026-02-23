@@ -30,7 +30,7 @@ text-decoration:none;
 list-style: none;
 }
 .logo {
-display: block; 
+display: block;
 justify-self: center;
 align-items: start;
 }
@@ -260,8 +260,7 @@ line-height: 24px;
 .footer {
 display: grid;
 justify-content: center;
-grid-template-columns: repeat(3, 1fr); 
-
+grid-template-columns: repeat(3, 1fr);
 }
 .footer-address {
 margin-left: 52px;
