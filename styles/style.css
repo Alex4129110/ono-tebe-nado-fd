@@ -4,7 +4,8 @@
 display: grid;
 justify-content: space-between;
 grid-template-columns: 1fr 148px 1fr;
-grid-template-rows:193px;
+padding-bottom: 45px ;
+padding-top: 43px;
 align-items:center;
 margin: 50px;
 }
@@ -23,6 +24,9 @@ list-style:circle;
 }
 .menu-item {
 text-decoration: underline;
+}
+.menu-link-item {
+decoration:none;
 }
 .menu-item-active {
 text-decoration:none;
@@ -203,9 +207,9 @@ text-decoration: underline;
 text-underline-offset: 4px;
 }
 .lot-item {
-    position: relative;
-    width: 334px;
-    min-height: 596px;
+position: relative;
+width: 334px;
+min-height: 596px;
 }
 
 /* ===== СЕКЦИЯ ОБ АУКЦИОНЕ ===== */
